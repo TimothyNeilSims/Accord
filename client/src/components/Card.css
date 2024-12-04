@@ -1,0 +1,86 @@
+.Card {
+    display: flex;
+    align-items: left;
+    flex-direction: column;
+    backdrop-filter: blur(2px);
+    border: 1px solid rgba(255, 255, 255, 0.497);
+    border-radius: 15px;
+    padding: 10px;
+    margin-bottom: 15px;
+    width: 100%;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: box-shadow 0.3s;
+}
+
+.Card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.title, .timestamp, .description, .flag {
+    color: rgb(0, 0, 0);
+    padding-left: 0px;
+    text-align: left;
+}
+
+.upvotes {
+    font-size: 20px;
+    color:black;
+}
+
+.Card > * {
+    margin-top: 8px; 
+    margin-bottom: 8px; 
+}
+
+.title {
+    font-size: 45px;
+}
+
+.timestamp, .flag {
+    font-size: 18px;
+}
+/* 
+.author, .description {
+    color: rgb(0, 0, 0);
+    margin-bottom: 20px;
+} */
+
+/* .description {
+    text-align: justify;
+    text-justify: inter-word;
+    padding-right: 30px;
+    font-size: 15px;
+} */
+
+.betButton {
+    width: 70px;
+    height: 70px; 
+    border-radius: 8px;
+    border: 1px black solid;
+    padding: 0.6em; 
+    font-size: 15px;
+    font-weight: 500;
+    background-color: #000000;
+    color: white;
+    cursor: pointer;
+    transition: border-color 0.25s;
+}
+
+.betButton:hover {
+    border-color: #646cff;
+}
+
+.moreButton {
+    width: 30px;
+    float: right; 
+    cursor: pointer;
+}
+
+.flag {
+    font-weight: 1000;
+}
+
+.underline {
+    text-decoration: none;
+}

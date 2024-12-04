@@ -1,0 +1,91 @@
+.post{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 20px;
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255);
+    width: 75%;
+}
+
+.postInfo {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    gap: 30px;
+}
+
+.comments {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 20px;
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: rgba(211, 211, 211, 0.962);
+}
+
+.time {
+    font-size: 20px;
+}
+
+.title {
+    font-size: 44px;
+}
+
+.upvotes {
+    font-size: 24px;
+}
+
+.postImage {
+    width: 50%;
+    height: auto;
+}
+
+.betButton {
+        text-decoration: none;
+        background-color: rgb(0, 0, 0);
+        color: rgb(255, 255, 255);
+        width: 5%;
+        height: 3%;
+        padding: 10px;
+        border-radius: 10px;
+        text-align: center;
+        font-size: 20px;
+}
+
+.Upvotes {
+    display: flex;    
+    align-items: center;
+    font-size: 20px;    
+    gap: 10px;      
+
+}
+
+.loading-animation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.loading-animation::before {
+    content: "";
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #000;
+    animation: loading 1s infinite;
+}
+
+@keyframes loading {
+    0% {
+        transform: scale(0);
+    }
+    50% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(0);
+    }
+}
